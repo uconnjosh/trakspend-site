@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>trakspend budget app</title>
+  <meta name="description" content="trakspend is a simple, privacy-friendly monthly budget tracker for iPhone. No bank linking. Just set a monthly budget and log expenses.">
+  <meta property="og:title" content="trakspend — Simple Monthly Budget Tracker">
+  <meta property="og:description" content="A minimal, privacy-first budget app. No bank linking.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trakspend.com/">
+  <meta property="og:image" content="https://trakspend.com/og-image.png">
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root { color-scheme: light dark; }
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji"; line-height: 1.5; }
+    .wrap { max-width: 800px; margin: 0 auto; padding: 3rem 1.25rem; }
+    header { display: flex; align-items: center; gap: .75rem; }
+    header img { width: 68px; height: 68px; border-radius: 12px; }
+    h1 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin: .2rem 0 .25rem; }
+    .tag { display: inline-block; font-size: .85rem; padding: .2rem .5rem; border: 1px solid #ccc; border-radius: 999px; }
+    .lead { font-size: 1.1rem; margin-top: 1rem; opacity: .9; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 2rem 0; }
+    .card { border: 1px solid #e5e7eb; border-radius: 14px; padding: 1rem; }
+    footer { margin-top: 2rem; font-size: .95rem; opacity: .9; }
+    a { color: inherit; }
+    a.btn { display:inline-block; border:1px solid #111; border-radius:10px; padding:.6rem .9rem; text-decoration:none; }
+    .muted { opacity:.7; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="icon.png" alt="trakspend icon">
+      <div>
+        <h1>trakspend</h1>
+        <div class="tag">Beta</div>
+      </div>
+    </header>
+
+    <p class="lead">
+      A simple, privacy-friendly monthly budget tracker for iPhone. 
+      No bank linking, no ads — just set a monthly budget and log expenses.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <strong>Why trakspend?</strong>
+        <p>Start in seconds: set what you want to spend for the rest of this month, then just log your expenses in the app.</p>
+      </div>
+      <div class="card">
+        <strong>Privacy-first</strong>
+        <p>No bank connections. Your data stays on your device and iCloud/CloudKit.</p>
+      </div>
+      <div class="card">
+        <strong>Made for clarity</strong>
+        <p>trakspend shows how much you can safely spend each day to stay within your monthly budget.</p>
+      </div>
+    </div>
+
+    <p>
+      <a class="btn" href="https://apps.apple.com/app/idYOUR_APP_ID">Get trakspend on the App Store</a>
+    </p>
+
+    <footer>
+      <p>
+        Need help? Email <a href="mailto:support@trakspend.com" rel="noopener">support@trakspend.com</a>.
+      </p>
+      <p class="muted">
+        © <span id="y"></span> trakspend. <a href="/privacy">Privacy Policy</a>
+      </p>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
